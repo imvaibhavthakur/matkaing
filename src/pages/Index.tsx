@@ -2,6 +2,7 @@ import { BettingCard } from "@/components/BettingCard";
 import { WalletCard } from "@/components/WalletCard";
 import Navbar from "@/components/Navbar";
 import MenuItems from "@/components/MenuItems";
+import Description from "@/components/DEscription";
 
 const Index = () => {
   const games = [
@@ -28,6 +29,10 @@ const Index = () => {
       <MenuItems />
       <div className="p-4 md:p-8">
         <div className="max-w-7xl mx-auto">
+          {/* Description Section */}
+          <div className="mt-1 mb-2 border border-gray-300 p-4 rounded-md">
+            <Description />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {/* Wallet Section */}
             <div className="md:col-span-1">
@@ -47,6 +52,7 @@ const Index = () => {
                 ))}
               </div>
             </div>
+          
           </div>
         </div>
       </div>

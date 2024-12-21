@@ -12,6 +12,7 @@ import TripplePatti from "./components/games/TripplePatti";
 import JodiChart from "./components/games/JodiChart";
 import PanelChart from "./components/games/PanelChart";
 import HowToPlay from "./components/games/HowToPlay";
+import Login from "./pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,8 @@ const App = () => (
           <Route path="/jodi-chart" element={<JodiChart />} />
           <Route path="/panel-chart" element={<PanelChart />} />
           <Route path="/how-to-play" element={<HowToPlay />} />
+          <Route path="/login" element={<Login />} /> {/* Add the login route */}
+          
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
