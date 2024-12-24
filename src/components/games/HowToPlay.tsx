@@ -2,35 +2,61 @@ import { Card } from "@/components/ui/card";
 
 const HowToPlay = () => {
   return (
-    <Card className="bg-betting-card p-6 border-betting-accent">
-      <h2 className="text-2xl font-bold text-gold mb-4">How To Play</h2>
-      <div className="space-y-4 text-white">
-        <section>
-          <h3 className="text-xl font-semibold text-gold mb-2">Single</h3>
-          <p>Choose any single digit from 0-9 and place your bet.</p>
-        </section>
-        
-        <section>
-          <h3 className="text-xl font-semibold text-gold mb-2">Jodi</h3>
-          <p>Select any two digits from 00-99 to place your bet.</p>
-        </section>
-        
-        <section>
-          <h3 className="text-xl font-semibold text-gold mb-2">Single Patti</h3>
-          <p>Choose any three digits from 000-999 where all digits are different.</p>
-        </section>
-        
-        <section>
-          <h3 className="text-xl font-semibold text-gold mb-2">Double Patti</h3>
-          <p>Select three digits where exactly two digits are the same.</p>
-        </section>
-        
-        <section>
-          <h3 className="text-xl font-semibold text-gold mb-2">Tripple Patti</h3>
-          <p>Pick three digits where all digits are the same.</p>
-        </section>
+    <div className="space-y-8">
+      <div className="text-center">
+        <h1 className="text-3xl font-bold mb-4">How to Play Matka</h1>
+        <p className="text-foreground/70">Learn how to play different Matka games</p>
       </div>
-    </Card>
+
+      <div className="space-y-6">
+        <Card className="p-6">
+          <h2 className="text-2xl font-semibold mb-4">Single</h2>
+          <p className="text-foreground/80 leading-relaxed">
+            In Single game, you need to select any number from 0-9. If your selected number matches with the result, you win. The winning amount is 10 times of your bet amount.
+          </p>
+        </Card>
+
+        <Card className="p-6">
+          <h2 className="text-2xl font-semibold mb-4">Jodi</h2>
+          <p className="text-foreground/80 leading-relaxed">
+            Jodi is a two-digit number game where you need to select any number from 00-99. If your selected number matches with the result, you win. The winning amount is 90 times of your bet amount.
+          </p>
+        </Card>
+
+        <Card className="p-6">
+          <h2 className="text-2xl font-semibold mb-4">Single Patti</h2>
+          <p className="text-foreground/80 leading-relaxed">
+            Single Patti is a three-digit number game where you need to select any number from 000-999. If your selected number matches with the result, you win. The winning amount is 150 times of your bet amount.
+          </p>
+        </Card>
+
+        <Card className="p-6">
+          <h2 className="text-2xl font-semibold mb-4">Double Patti</h2>
+          <p className="text-foreground/80 leading-relaxed">
+            Double Patti is similar to Single Patti but with two same digits. For example: 112, 221, 334, etc. The winning amount is 300 times of your bet amount.
+          </p>
+        </Card>
+
+        <Card className="p-6">
+          <h2 className="text-2xl font-semibold mb-4">Triple Patti</h2>
+          <p className="text-foreground/80 leading-relaxed">
+            Triple Patti is when all three digits are same. For example: 111, 222, 333, etc. The winning amount is 900 times of your bet amount.
+          </p>
+        </Card>
+
+        <Card className="p-6">
+          <h2 className="text-2xl font-semibold mb-4">Important Rules</h2>
+          <ul className="list-disc list-inside space-y-2 text-foreground/80">
+            <li>You can play multiple numbers in a single game</li>
+            <li>Minimum bet amount is 10 points</li>
+            <li>Results are declared twice a day</li>
+            <li>Morning result time: 10:00 AM</li>
+            <li>Evening result time: 6:00 PM</li>
+            <li>You can check previous results in Jodi Chart and Panel Chart</li>
+          </ul>
+        </Card>
+      </div>
+    </div>
   );
 };
 

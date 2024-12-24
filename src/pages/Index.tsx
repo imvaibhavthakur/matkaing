@@ -2,7 +2,7 @@ import { BettingCard } from "@/components/BettingCard";
 import { WalletCard } from "@/components/WalletCard";
 import Navbar from "@/components/Navbar";
 import MenuItems from "@/components/MenuItems";
-import Description from "@/components/DEscription";
+import Description from "@/components/Description";
 
 const Index = () => {
   const games = [
